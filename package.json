@@ -1,0 +1,14 @@
+{
+  "name": "live-server",
+  "version": "1.0.0",
+  "description": "Live Streaming",
+  "main": "index.js",
+  "scripts": {
+    "start": "wrangler dev",
+    "publish": "wrangler publish"
+  },
+  "keywords": ["cloudflare", "workers", "static"],
+  "author": "Hashir",
+  "license": "MIT",
+  "devDependencies": {}
+}
