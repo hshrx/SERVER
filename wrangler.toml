@@ -1,9 +1,16 @@
 name = "live-server-worker"
 type = "javascript"
 account_id = "aa92a504a87a3e8eee64ccfd7c340515"
-workers_dev = true
-compatibility_date = "2024-10-31"
 
-[[kv_namespaces]]
-binding = "server"
-id = "7060791a875c49e8bccfc47725f6bf36"
+# Environment configuration
+workers_dev = true  # Set to true for development, false for production
+
+#route = "https://your-domain.com/*"  # Replace with your route if deploying to a custom domain
+#zone_id = "YOUR_ZONE_ID"  # Optional, only needed if using a custom domain
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "modules"  # Required for using module format Workers
+main = "./index.js"  # Entry point for the Worker
