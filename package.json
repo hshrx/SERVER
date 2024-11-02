@@ -1,14 +1,11 @@
 {
-  "name": "live-server",
+  "name": "live-server-worker",
   "version": "1.0.0",
-  "description": "Live Streaming on Cloudflare Workers",
+  "description": "Live Streaming Worker",
   "main": "index.js",
   "scripts": {
-    "start": "wrangler dev",
-    "publish": "wrangler publish"
+    "build": "echo 'No build process required'",
+    "start": "node index.js"
   },
-  "keywords": ["cloudflare", "workers", "static", "kv"],
-  "author": "Hashir",
-  "license": "MIT",
-  "devDependencies": {}
+  "dependencies": {}
 }
