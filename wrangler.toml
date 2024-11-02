@@ -1,0 +1,9 @@
+name = "live-server-worker"
+type = "javascript"
+account_id = "aa92a504a87a3e8eee64ccfd7c340515"
+workers_dev = true
+compatibility_date = "2024-10-31"
+
+[[kv_namespaces]]
+binding = "server"
+id = "7060791a875c49e8bccfc47725f6bf36"
